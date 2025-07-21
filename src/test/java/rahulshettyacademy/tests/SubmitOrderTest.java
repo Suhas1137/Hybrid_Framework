@@ -1,6 +1,7 @@
 package rahulshettyacademy.tests;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -21,15 +22,15 @@ public class SubmitOrderTest extends BaseTest{
 	String countryName="india";
 	
 	@Test(dataProvider="getData",groups="Purchase")
-	public void SubmitOrder(String email,String password,String productName) throws IOException, InterruptedException{
+	public void SubmitOrder(HashMap<String,String> input) throws IOException, InterruptedException{
 		
-		ProductCatalogue productCatalogue=landingpage.loginApplication(email, password);
+		ProductCatalogue productCatalogue=landingpage.loginApplication(input.get("email"), input.get("password"));
 	
 		List<WebElement>products=productCatalogue.getProductList();
-		productCatalogue.addProductToCart(productName);
+		productCatalogue.addProductToCart(input.get("product"));
 		CartPage cartPage=productCatalogue.goToCartPage();
 		
-		Boolean match=cartPage.verifyProductDisplay(productName);
+		Boolean match=cartPage.verifyProductDisplay(input.get("product"));
 		Assert.assertTrue(match);
 		CheckoutPage checkoutpage=cartPage.goToCheckout();
 		checkoutpage.selectCountry(countryName);
@@ -50,7 +51,17 @@ public class SubmitOrderTest extends BaseTest{
 	
 	@DataProvider
 	public Object[][] getData() {
-		return new Object[][] {{"jsuhas822@gmail.com","Rahulshetty@123#","ZARA COAT 3"},{"jsuhas747@gmail.com","Rahul@123#","ADIDAS ORIGINAL"}};
+		HashMap<String,String> map=new HashMap<String,String>();
+		map.put("email", "jsuhas822@gmail.com");
+		map.put("password", "Rahulshetty@123#");
+		map.put("product", "ZARA COAT 3");
+		
+		HashMap<String,String> map1=new HashMap<String,String>();
+		map1.put("email", "jsuhas747@gmail.com");
+		map1.put("password", "Rahul@123#");
+		map1.put("product", "ADIDAS ORIGINAL");
+		
+		return new Object[][] {{map},{map1}};
 	}
 
 }
