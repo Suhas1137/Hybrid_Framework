@@ -2,21 +2,21 @@
 <testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-21T16:53:15 IST" name="Suite" finished-at="2025-07-21T16:53:29 IST" duration-ms="14321">
+  <suite started-at="2025-07-21T18:39:25 IST" name="Suite" finished-at="2025-07-21T18:39:40 IST" duration-ms="14931">
     <groups>
       <group name="Purchase">
-        <method signature="SubmitOrderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@489115ef]" name="SubmitOrder" class="rahulshettyacademy.tests.SubmitOrderTest"/>
+        <method signature="SubmitOrderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@79079097]" name="SubmitOrder" class="rahulshettyacademy.tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2025-07-21T16:53:15 IST" name="Error Validation Test" finished-at="2025-07-21T16:53:15 IST" duration-ms="22">
+    <test started-at="2025-07-21T18:39:25 IST" name="Error Validation Test" finished-at="2025-07-21T18:39:25 IST" duration-ms="23">
     </test> <!-- Error Validation Test -->
-    <test started-at="2025-07-21T16:53:15 IST" name="Submit order Test" finished-at="2025-07-21T16:53:29 IST" duration-ms="14321">
+    <test started-at="2025-07-21T18:39:25 IST" name="Submit order Test" finished-at="2025-07-21T18:39:40 IST" duration-ms="14931">
       <class name="rahulshettyacademy.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@489115ef]" started-at="2025-07-21T16:53:15 IST" name="launchApplication" finished-at="2025-07-21T16:53:20 IST" duration-ms="4744" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@79079097]" started-at="2025-07-21T18:39:26 IST" name="launchApplication" finished-at="2025-07-21T18:39:31 IST" duration-ms="5137" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@489115ef]" started-at="2025-07-21T16:53:20 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-07-21T16:53:23 IST" duration-ms="3393" status="PASS">
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@79079097]" started-at="2025-07-21T18:39:31 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-07-21T18:39:34 IST" duration-ms="3464" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,15 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@489115ef]" started-at="2025-07-21T16:53:23 IST" name="tearDown" finished-at="2025-07-21T16:53:23 IST" duration-ms="165" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@79079097]" started-at="2025-07-21T18:39:34 IST" name="tearDown" finished-at="2025-07-21T18:39:35 IST" duration-ms="161" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@489115ef]" started-at="2025-07-21T16:53:23 IST" name="launchApplication" finished-at="2025-07-21T16:53:25 IST" duration-ms="1832" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@79079097]" started-at="2025-07-21T18:39:35 IST" name="launchApplication" finished-at="2025-07-21T18:39:36 IST" duration-ms="1781" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@489115ef]" started-at="2025-07-21T16:53:25 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-07-21T16:53:29 IST" duration-ms="3880" status="PASS">
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@79079097]" started-at="2025-07-21T18:39:36 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-07-21T18:39:40 IST" duration-ms="3296" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -46,7 +46,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@489115ef]" started-at="2025-07-21T16:53:29 IST" name="tearDown" finished-at="2025-07-21T16:53:29 IST" duration-ms="141" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@79079097]" started-at="2025-07-21T18:39:40 IST" name="tearDown" finished-at="2025-07-21T18:39:40 IST" duration-ms="244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
