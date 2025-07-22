@@ -8,13 +8,14 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import rahulshettyacademy.TestComponents.BaseTest;
+import rahulshettyacademy.TestComponents.Retry;
 import rahulshettyacademy.pageObjects.CartPage;
 import rahulshettyacademy.pageObjects.ProductCatalogue;
 
 public class ErrorValidationsTest extends BaseTest{
 
 	
-	@Test(groups={"ErrorHandling"})
+	@Test(groups={"ErrorHandling"},retryAnalyzer=Retry.class)
 	public void LoginErrorValidation() throws IOException, InterruptedException{
 		
 		String productName = "ZARA COAT 3";
