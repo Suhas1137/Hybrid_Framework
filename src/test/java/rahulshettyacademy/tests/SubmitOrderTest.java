@@ -1,13 +1,9 @@
 package rahulshettyacademy.tests;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -25,7 +21,7 @@ public class SubmitOrderTest extends BaseTest {
 	String productName = "ZARA COAT 3";
 	String countryName = "india";
 
-	@Test(dataProvider = "getData", groups = "Purchase")
+	@Test(dataProvider = "getData", groups = { "Purchase" })
 	public void SubmitOrder(HashMap<String, String> input) throws IOException, InterruptedException {
 
 		ProductCatalogue productCatalogue = landingpage.loginApplication(input.get("email"), input.get("password"));
@@ -53,11 +49,11 @@ public class SubmitOrderTest extends BaseTest {
 
 	}
 
-	@DataProvider
+	@DataProvider(name="getData")
 	public Object[][] getData() throws IOException {
 
 		List<HashMap<String, String>> data = getJsonDataToMap(
-				System.getProperty("user.dir") + "//src//test//java//rahulshettyacademy//data//PurchaseOrder.json");
+				System.getProperty("user.dir") + "/src/test/java/rahulshettyacademy/data/PurchaseOrder.json");
 
 		return new Object[][] { { data.get(0) }, { data.get(1) } };
 	}
@@ -73,5 +69,5 @@ public class SubmitOrderTest extends BaseTest {
 //		map1.put("email", "jsuhas747@gmail.com");
 //		map1.put("password", "Rahul@123#");
 //		map1.put("product", "ADIDAS ORIGINAL");
-
+//		}
 }
