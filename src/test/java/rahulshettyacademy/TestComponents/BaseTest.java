@@ -30,7 +30,7 @@ public class BaseTest {
 
 	public WebDriver driver;
 	public LandingPage landingpage;
-
+// making comment for checking cicd pipeline
 	public WebDriver initializeDriver() throws IOException {
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")
